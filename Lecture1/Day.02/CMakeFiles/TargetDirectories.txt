@@ -1,0 +1,2 @@
+/home/karl/C++/Day.02/CMakeFiles/IOAccounts.dir
+/home/karl/C++/Day.02/CMakeFiles/WordCount.dir
