@@ -5,6 +5,7 @@
 int testStr() {
 	
 	cout << seb::str::lowercase("AbC") << endl;
+	cout << seb::str::lowercase("AbCDEFGggg") << endl;
 	cout << seb::str::uppercase("AbC") << endl;
 }
 

@@ -10,12 +10,13 @@ struct Account {
 	float	rate;
 };
 
+using namespace std;
 
 void createAccount(Account& account)
 {
 	const char charset[] = "0123456789abc";
 	const size_t max_index = (sizeof(charset) - 1);
-	generate_n( account.accountNo.begin(), 5, charset[rand() % max_index] );
+	//generate_n( account.accountNo.begin(), 5, charset[rand() % max_index] );
 	account.balance = rand() % 1000; 
 	account.rate = (rand() % 1000 / 100.0);
 	
@@ -26,7 +27,7 @@ int main(int argc, char* argv[]) {
 	srand(time(0));
 	unsigned int count = 5;
 	if( argc > 1 )
-		count = stoi(argv[1]);
+		count = std::stoi(argv[1]);
 
 	vector<Account> vAccounts;
 	for(unsigned int index=0; index<count; index++) {
