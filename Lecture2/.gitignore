@@ -1,1 +1,14 @@
+*.o
+*.gch
+*.pch
+*.so
+*.a
+*.out
+.project
+.cproject
 /Debug/
+build/
+*~
+CMakeLists.txt
+.idea/
+*settings.xml
